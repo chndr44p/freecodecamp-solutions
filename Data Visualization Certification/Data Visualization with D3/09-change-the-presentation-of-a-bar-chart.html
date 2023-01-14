@@ -19,7 +19,10 @@
       .append("div")
       .attr("class", "bar")
       // Add your code below this line
-      .style("height", (d) => (d*10 + "px"))
+      .style("height", (d) => {
+       console.log(d * 10)
+       return ((d * 10) + "px")
+      })
       
       // Add your code above this line
   </script>
